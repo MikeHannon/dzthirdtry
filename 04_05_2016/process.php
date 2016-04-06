@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style media="screen">
+			#left{
+				width:30%;
+				display:inline-block;
+				vertical-align: top;
+			}
+			#right{
+				width:40%;
+				display:inline-block;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
 <p style="text-decoration: underline;font-weight:bold;">Submitted Information</p>
 <p style="font-family:monospace;">
 <?php
@@ -27,3 +46,20 @@
 	}
 ?>
 </p>
+<!-- Not stylish but another strategy -->
+<h3>Editted Survey Form</h3>
+<div id = 'left'>
+<p>Name:</p>
+<p>Language:</p>
+<p>Location:</p>
+<p>Comment:</p>
+</div>
+<div id = 'right'>
+	<p><?= $_POST['name']?></p>
+	<p><?= $_POST['favlanguage']?></p>
+	<p><?= $_POST['dojolocation']?></p>
+	<p><?= $_POST['comment']?></p>
+</div>
+
+</body>
+</html>
